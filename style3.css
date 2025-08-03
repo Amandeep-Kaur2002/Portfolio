@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 28);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(0, 0, 28);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 45px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(110, 249, 249);
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.left {
+    margin: 65px;
+    color: rgb(110, 249, 249);
+    font-family: "Winky Rough", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.left span {
+    font-family: "Winky Rough", sans-serif;
+    font-size: 3rem;
+
+}
+
+.right {
+    margin: 0 30px;
+}
+
+.heading {
+    font-size: 1.9rem;
+    font-family: "Winky Rough", sans-serif;
+    text-decoration: underline;
+    margin-left: 48%;
+    color: rgb(110, 249, 249);
+}
+
+.firstsection {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.firstsection>div {
+    width: 35%;
+}
+
+.skill1 {
+    font-size: 1.6rem;
+    font-family: "Winky Rough", sans-serif;
+}
+.skill1:hover{
+    color: rgb(110, 249, 249);
+
+}
+
+.skill2 {
+    font-size: 1.6rem;
+    margin-left: 15px;
+    font-family: "Winky Rough", sans-serif;
+}
+.skill2:hover{
+    color: rgb(110, 249, 249);
+
+}
+
+.leftsection ul {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.leftsection ul li {
+    list-style: none;
+    font-family: "Winky Rough", sans-serif;
+    font-size:1.2rem;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.bar-wrapper {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 25px;
+    box-shadow: 0 0 15px rgb(110, 249, 249);
+    border-radius: 25px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.fill-bar {
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 28);
+    display: flex;
+    background-color: rgb(110, 249, 249);
+    justify-content: center;
+    align-items: center;
+    transition: width 1s ease-in-out;
+    border-radius: 30px;
+}
+
+.bar-wrapper1 {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 25px;
+    box-shadow: 0 0 15px rgb(110, 249, 249);
+    border-radius: 25px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.fill-bar1 {
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 28);
+    display: flex;
+    background-color: rgb(110, 249, 249);
+    justify-content: center;
+    align-items: center;
+    transition: width 1s ease-in-out;
+    border-radius: 30px;
+}
+
+.bar-wrapper2 {
+    width: 100%;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 25px;
+    box-shadow: 0 0 15px rgb(110, 249, 249);
+    border-radius: 30px;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+.fill-bar2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(110, 249, 249);
+    color: rgb(0, 0, 28);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition: width 2s ease-in-out;
+}
+
+.bar-wrapper3 {
+    width: 100%;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 25px;
+    box-shadow: 0 0 15px rgb(110, 249, 249);
+    border-radius: 30px;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+.fill-bar3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(110, 249, 249);
+    color: rgb(0, 0, 28);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition: width 2s ease-in-out;
+}
+
+.rightsection .List1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+ .circle-container {
+    margin-top: 25px;
+    margin-left: 15px;
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+.circle-text {
+    margin-left: 5px;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: rgb(0, 0, 28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .rotating-border {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 120px;
+      height: 120px;
+      border: 4px solid transparent;
+      border-top: 4px solid  rgb(110, 249, 249);
+      border-right: 4px solid  rgb(110, 249, 249);
+      border-radius: 50%;
+      animation: rotate 3s linear infinite;
+       box-shadow: 0 0 10px rgb(110, 249, 249), 0 0 35px rgb(110, 249, 249);
+      z-index: 1;
+    }
+     @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+.rightsection .List2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.circle-container2 {
+    margin-top: 25px;
+    margin-left: 15px;
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+.circle-text2 {
+      margin-left: 15px;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: rgb(0, 0, 28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .rotating-border2 {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 120px;
+      height: 120px;
+      border: 4px solid transparent;
+      border-top: 4px solid  rgb(110, 249, 249);
+      border-right: 4px solid  rgb(110, 249, 249);
+      border-radius: 50%;
+      animation: rotate 3s linear infinite;
+      box-shadow: 0 0 10px rgb(110, 249, 249), 0 0 20px rgb(110, 249, 249);
+      z-index: 1;
+    }
+     @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+
+.rightsection .List3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.circle-container1 {
+    margin-top: 25px;
+    margin-left: 35px;
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+.circle-text1 {
+      margin-left: 15px;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: rgb(0, 0, 28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .rotating-border1 {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 120px;
+      height: 120px;
+      border: 4px solid transparent;
+      border-top: 4px solid  rgb(110, 249, 249);
+      border-right: 4px solid  rgb(110, 249, 249);
+      border-radius: 50%;
+      box-shadow: rgb(110, 249, 249) ;
+      animation: rotate 3s linear infinite;
+      box-shadow: 0 0 10px rgb(110, 249, 249), 0 0 20px rgb(110, 249, 249);
+      z-index: 1;
+    }
+     @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+

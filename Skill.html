@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amandeep - developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><span>MY</span>Porfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Myjourney.html">My Journey</a></li>
+                    <li><a href="Skill.html">Skills</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="contactme.html"/>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <span class="heading">My Skills</span>
+        <section class="firstsection">
+            <div class="leftsection"><span class="skill1">Technical Skills</span>
+                <ul>
+                    <li>Programming Language</li>
+                    <div class="bar-wrapper">
+                        <div class="fill-bar" id="skillBar">Loading...</div>
+                    </div>
+                    <script>
+                        const skills = [
+                            { name: "Java", percent: 85 },
+                            { name: "Python", percent: 55 },
+                            { name: "C", percent: 30 },
+                        ];
+
+                        let index = 0;
+
+                        function updateSkillBar() {
+                            const skill = skills[index];
+                            const bar = document.getElementById("skillBar");
+
+                            bar.textContent = `${skill.name} - ${skill.percent}%`;
+                            bar.style.width = `${skill.percent}%`;
+
+
+                            index = (index + 1) % skills.length;
+                        }
+
+                        // First load
+                        updateSkillBar();
+
+                        // Update every 3 seconds
+                        setInterval(updateSkillBar, 3000);
+                    </script>
+                    <li>Web development</li>
+                    <div class="bar-wrapper1">
+                        <div class="fill-bar1" id="skillBar1">Loading...</div>
+                    </div>
+                    <script>
+                        const skills1 = [
+                            { name: "html", percent: 70 },
+                            { name: "CSS", percent: 55 },
+                            { name: "Javascript", percent: 30 },
+                        ];
+
+                        let index1 = 0;
+
+                        function updateSkillBar1() {
+                            const skill1 = skills1[index];
+                            const bar = document.getElementById("skillBar1");
+
+                            bar.textContent = `${skill1.name} - ${skill1.percent}%`;
+                            bar.style.width = `${skill1.percent}%`;
+
+                            index1 = (index1 + 1) % skills1.length;
+                        }
+
+                        // First load
+                        updateSkillBar1();
+
+                        // Update every 3 seconds
+                        setInterval(updateSkillBar1, 3000);
+                    </script>
+                    <li>DataBase</li>
+                    <div class="bar-wrapper2">
+                        <div class="fill-bar2" id="fillBar2">SQL - 0%</div>
+                    </div>
+
+                    <script>
+                        const language = "SQL";
+                        const percent = 70;
+
+                        const bar = document.getElementById("fillBar2");
+
+                        // Delay to allow CSS transition
+                        setTimeout(() => {
+                            bar.style.width = percent + "%";
+                            bar.textContent = `${language} - ${percent}%`;
+                        }, 100); // Start after 100ms
+                    </script>
+                    <li>Cloud Technologies</li>
+                    <div class="bar-wrapper3">
+                        <div class="fill-bar3" id="fillBar3">AWS(EC2, S3) - 0%</div>
+                    </div>
+
+                    <script>
+                        const tool = "AWS(EC2,S3)";
+                        const percent1 = 30;
+
+                        const bar1 = document.getElementById("fillBar3");
+
+                        // Delay to allow CSS transition
+                        setTimeout(() => {
+                            bar1.style.width = percent1 + "%";
+                            bar1.textContent = `${tool} - ${percent1}%`;
+                        }, 100); // Start after 100ms
+                    </script>
+
+
+                </ul>
+            </div>
+            <div class="rightsection"><span class="skill2">Soft Skills</span>
+                <div class="List1">
+                    <div class="circle-container">
+                        <div class="rotating-border"></div>
+                        <div class="circle-text">Communication</div>
+                    </div>
+                     <div class="circle-container">
+                        <div class="rotating-border"></div>
+                        <div class="circle-text">Leadership</div>
+                    </div>
+                </div>
+                <div class="List2">
+                    <div class="circle-container2">
+                        <div class="rotating-border2"></div>
+                        <div class="circle-text2">Problem Solving</div>
+                    </div>
+                </div>
+                <div class="List3">
+                     <div class="circle-container">
+                        <div class="rotating-border"></div>
+                        <div class="circle-text">Teamwork</div>
+                    </div>
+                    <div class="circle-container1">
+                        <div class="rotating-border1"></div>
+                        <div class="circle-text1">Time Management</div>
+                    </div>
+                    
+                </div>
+
+
+
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
